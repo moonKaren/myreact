@@ -1,0 +1,51 @@
+.catalogCard {
+    background-color: #EAF3FC;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 310px;
+}
+
+.catalogCard img {
+    width: 270px;
+    height: 270px;
+}
+
+.catalogCard h1 {
+    font-family: 'm';
+    font-size: 25px;
+    color: #0E1371;
+}
+
+.catalogCard p {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'r';
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+.catalogCard h2 {
+    font-family: 'm';
+    font-size: 35px;
+    color: #0E1371;
+}
+
+.catalogCard a{
+    display: flex;
+    justify-content: center;
+    background-color: #0E1371;
+    padding: 7px 0;
+    font-family: 'r';
+    font-size: 25px;
+    color: white;
+    border-radius: 20px;
+}
+
+.catalogCard a:hover {
+    background-color: #C0C960;
+}

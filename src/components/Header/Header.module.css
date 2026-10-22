@@ -1,0 +1,43 @@
+header {
+    background-color: #9BA0E2;
+    padding: 20px 0;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head nav {
+    display: flex;
+    gap: 30px;
+}
+
+.head nav a {
+    color: white;
+    font-size: 20px;
+    font-family: 'r';
+}
+
+.head nav a:hover {
+    color: #0E1371;
+}
+
+.head img {
+    height: 60px;
+}
+
+.head_btn a {
+    background-color: white;
+    color: #9BA0E2;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-family: 'r';
+}
+
+.head_btn a:hover {
+    background-color: #0E1371;
+    color: white;
+}

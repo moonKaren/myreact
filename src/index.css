@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'm';
+  src: url(./fonts/JACOBSSANS-MEDIUM.TTF);
+}
+
+@font-face {
+  font-family: 'r';
+  src: url(./fonts/JACOBSSANS-REGULAR.TTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+
+body h1,
+body h2,
+body h3 {
+  font-weight: normal;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

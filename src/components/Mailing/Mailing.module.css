@@ -1,0 +1,70 @@
+.mailing {
+    margin-bottom: 120px;
+    background-color: #EAF3FC;
+    border-radius: 40px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mailing_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.mailing p {
+    color: #C0C960;
+    font-size: 18px;
+    font-family: 'r';
+}
+
+.mailing_text h1 {
+    color: #0E1371;
+    font-family: 'm';
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.mailing_text h2 {
+    color: #1e1e1e;
+    font-size: 23px;
+    font-family: 'r';
+    margin-bottom: 10px;
+}
+
+.mailing input{
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+}
+
+.mailing input[type="email"]{
+    background-color: white;
+    font-family: 'r';
+    font-size: 20px;
+    color: #1e1e1e;
+    border: 2px solid white;
+}
+
+.mailing input[type="email"]:focus {
+    outline: none;
+    border: 2px solid #0E1371;
+}
+
+.mailing input[type="submit"] {
+    background-color: #9BA0E2;
+    color: white;
+    font-family: 'm';
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mailing input[type="submit"]:hover {
+    background-color: #0E1371;
+}
+

@@ -1,0 +1,95 @@
+.catalogPage {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.filtr {
+    background-color: #9BA0E2;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: fit-content;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.search input {
+    background-color: transparent;
+    width: 100%;
+    font-family: 'r';
+    font-size: 20px;
+    color: #0E1371;
+    border: none;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.checkbox p {
+    font-family: 'r';
+    font-size: 20px;
+    color: #0E1371;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.filtr select {
+    background-color: #0E1371;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'r';
+    font-size: 20px;
+    color: white;
+}
+
+.filtr select:focus {
+    outline: none;
+}
+
+.filtr select option {
+    background-color: white;
+    color: #0E1371;
+}
+
+.filtr button {
+    background-color: #C0C960;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'r';
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filtr button:hover {
+    background-color: #0E1371;
+}
