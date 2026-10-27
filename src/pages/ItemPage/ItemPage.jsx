@@ -1,33 +1,31 @@
 
 import style from "./ItemPage.module.css"
-import item from "../../assets/item.svg"
+import { useParams } from 'react-router';
+import { categories, products } from '../../assets/data';
+import { PATH } from "../../rouring/Routing";
+import { Link } from 'react-router';
 
 export function ItemPage() {
+    const { id } = useParams()
+    const product = products.find(product => product.id == id)
+
     return (
         <div className="container">
             <div className={style.item}>
                 <div className={style.item_img}>
-                    <img src={item} alt="" />
+                    <img src={product.image} alt={product.title} />
                 </div>
 
                 <div className={style.item_text}>
-                    <h1>Золотой котел</h1>
+                    <h1>{product.title}</h1>
 
                     <p>
-                        Чай золотистого цвета со вкусом мягкого карамельно-сливочного пива.
-                        В основе китайский и индийский чёрный чай, дополненные тыквой и
-                        пряностями. Китайский чай даёт медово-солодовые нотки, индийский —
-                        терпкость и плотность. Тыква здесь сладкая, чуть ореховая, с
-                        пряным теплом корицы и гвоздики. Закройте глаза и очутитесь на
-                        пиру в Хогвартсе: тепло Большого зала, свечи под потолком,
-                        гигантские тыквы и сливочное пиво в компании друзей. А пока
-                        празднуете, в золотом котле закипит Феликс Фелицис — зелье,
-                        приносящее удачу.
+                        {product.description}
                     </p>
 
-                    <h2>425 ₽</h2>
+                    <h2>{product.price} ₽</h2>
 
-                    <a href="">В корзину</a>
+                    <Link to={PATH.card}>В корзину</Link>
                 </div>
             </div>
         </div>

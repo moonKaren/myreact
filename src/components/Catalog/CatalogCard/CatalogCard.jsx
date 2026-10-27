@@ -1,31 +1,22 @@
 
 import styles from './CatalogCard.module.css'
-import cardImg from '../../../assets/cardImg.svg'
 import { Link } from 'react-router'
 import { PATH } from '../../../rouring/Routing'
 
-export function CatalogCard() {
+export function CatalogCard({ product }) {
     return (
         <div className={styles.catalogCard}>
-            <img src={cardImg} alt="" />
+            <img src={product.image} alt={product.title} />
 
-            <h1>Золотой котел</h1>
+            <h1>{product.title}</h1>
 
             <p>
-                Чай золотистого цвета со вкусом мягкого карамельно-сливочного пива.
-                В основе китайский и индийский чёрный чай, дополненные тыквой и
-                пряностями. Китайский чай даёт медово-солодовые нотки, индийский —
-                терпкость и плотность. Тыква здесь сладкая, чуть ореховая, с
-                пряным теплом корицы и гвоздики. Закройте глаза и очутитесь на
-                пиру в Хогвартсе: тепло Большого зала, свечи под потолком,
-                гигантские тыквы и сливочное пиво в компании друзей. А пока
-                празднуете, в золотом котле закипит Феликс Фелицис — зелье,
-                приносящее удачу.
+                {product.description}
             </p>
 
-            <h2>425 руб.</h2>
+            <h2>{product.price} руб.</h2>
 
-            <Link to={PATH.Item}>Подробнее</Link>
+            <Link to={`/item/${product.id}`}>Подробнее</Link>
         </div>
     )
 }

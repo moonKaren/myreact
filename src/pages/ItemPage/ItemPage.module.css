@@ -45,3 +45,9 @@
 .item a:hover {
     background-color: #0E1371;
 }
+
+.item img {
+    width: 530px;
+    height: 530px;
+    border-radius: 20px;
+}

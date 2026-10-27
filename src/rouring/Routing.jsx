@@ -8,7 +8,7 @@ import { Page404 } from "../pages/Page404/Page404"
 export const PATH = {
     Home: '/',
     Catalog: '/catalog',
-    Item: '/item',
+    Item: '/item/:id',
     Page404: '*'
 }
 

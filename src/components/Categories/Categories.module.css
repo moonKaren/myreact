@@ -1,0 +1,22 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.checkbox p {
+    font-family: 'r';
+    font-size: 20px;
+    color: #0E1371;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+}

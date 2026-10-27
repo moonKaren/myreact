@@ -1,5 +1,6 @@
 
 import { Catalog } from "../../components/Catalog/Catalog"
+import { Categories } from "../../components/Categories/Categories"
 import style from "./CatalogPage.module.css"
 import search from '../../assets/search.svg'
 
@@ -16,27 +17,7 @@ export function CatalogPage() {
                         />
                     </div>
 
-                    <div className={style.categories}>
-                        <div className={style.checkbox}>
-                            <input type="checkbox" defaultChecked />
-                            <p>Все</p>
-                        </div>
-
-                        <div className={style.checkbox}>
-                            <input type="checkbox" />
-                            <p>Чай</p>
-                        </div>
-
-                        <div className={style.checkbox}>
-                            <input type="checkbox" />
-                            <p>Кофе</p>
-                        </div>
-
-                        <div className={style.checkbox}>
-                            <input type="checkbox" />
-                            <p>Другое</p>
-                        </div>
-                    </div>
+                    <Categories/>
 
                     <select defaultValue="">
                         <option value="">По цене, руб.</option>
