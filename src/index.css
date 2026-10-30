@@ -39,3 +39,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+.error {
+  font-size: 21px;
+  font-weight: bold;
+  color: crimson;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-style: italic;
+}
